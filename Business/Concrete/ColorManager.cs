@@ -12,8 +12,8 @@ namespace Business.Concrete
 {
     public class ColorManager : IColorService
     {
-        ICarColorDal _carColorService;
-        public ColorManager(EfCarColorDal carColorService)
+        IColorDal _carColorService;
+        public ColorManager(IColorDal carColorService)
         {
             _carColorService = carColorService;
         }
